@@ -21,6 +21,6 @@ You also need some RAM for youtrack, but I can't really tell how much. Maybe abo
 1. Install docker. [It's not very hard.](http://docs.docker.io/en/latest/installation/)
 2. Run it! (Stop with CTRL-C, repeat at pleasure)
 
-  `docker run -p 8080:8080 --volume /your-youtrack-data:/youtrack-data remmelt/youtrack`
+  `docker run -d -p 8080:8080 --volume /your-youtrack-data:/youtrack-data remmelt/youtrack`
 
 Now open your browser and point it to http://localhost:8080 and rejoice.

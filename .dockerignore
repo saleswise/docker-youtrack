@@ -1,3 +1,5 @@
+.git/
+.gitignore
 data/
 README.md
 ssh/id_rsa

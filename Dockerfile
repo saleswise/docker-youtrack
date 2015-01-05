@@ -17,7 +17,9 @@ VOLUME /youtrack-data
 
 CMD ["java", \
   "-Xmx1g", \
-  "-Duser.home=/youtrack-data", \
+  "-Duser.home=/youtrack", \
+  "-Ddatabase.location=/youtrack-data", \
+  "-Ddatabase.backup.location=/youtrack-data", \
   "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts", \
   "-Djavax.net.ssl.trustStorePassword=changeit", \
   "-Djetbrains.youtrack.disableBrowser=true", \

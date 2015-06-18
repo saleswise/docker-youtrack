@@ -27,6 +27,7 @@ CMD ["java", \
   "-Djetbrains.youtrack.enableGuest=false", \
   "-Djetbrains.mps.webr.log4jPath=/youtrack/log4j.xml", \
   "-Djava.awt.headless=true", \
+  "-Djava.security.egd=/dev/zrandom", \
   "-jar", \
   "/youtrack/youtrack.jar", \
   "8080"]

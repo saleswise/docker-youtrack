@@ -3,10 +3,11 @@ MAINTAINER Remmelt Pit <remmelt@remmelt.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV YOUTRACK_VERSION 6.0.12463
+ENV YOUTRACK_VERSION 6.5-14833
+ENV YOUTRACK_EAP_PREFIX EAP
 
 RUN mkdir -p /youtrack /youtrack-data
-RUN wget -nv http://download.jetbrains.com/charisma/youtrack-$YOUTRACK_VERSION.jar -O /youtrack/youtrack-$YOUTRACK_VERSION.jar
+RUN wget -nv http://download.jetbrains.com/charisma/$YOUTRACK_EAP_PREFIX/youtrack-$YOUTRACK_VERSION.jar -O /youtrack/youtrack-$YOUTRACK_VERSION.jar
 RUN ln -s /youtrack/youtrack-$YOUTRACK_VERSION.jar /youtrack/youtrack.jar
 
 COPY log4j.xml /youtrack/
